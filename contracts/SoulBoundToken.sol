@@ -132,4 +132,15 @@ contract SoulBoundToken is ERC721 {
     ) public override {
         revert("SoulBound Token: Operation not supported");
     }
+
+    /**
+     * @dev Override with empty implementation, as the method is N.A.
+     */
+    function transferFrom(
+        address from,
+        address to,
+        uint256 tokenId
+    ) public override {
+        revert("SoulBound Token: Operation not supported");
+    }
 }
